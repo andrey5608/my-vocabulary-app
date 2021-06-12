@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-vocabulary/static/css/main.540b87a0.chunk.css",
+    "main.js": "/my-vocabulary/static/js/main.7457a192.chunk.js",
+    "main.js.map": "/my-vocabulary/static/js/main.7457a192.chunk.js.map",
+    "runtime-main.js": "/my-vocabulary/static/js/runtime-main.0960611c.js",
+    "runtime-main.js.map": "/my-vocabulary/static/js/runtime-main.0960611c.js.map",
+    "static/css/2.21faa3a9.chunk.css": "/my-vocabulary/static/css/2.21faa3a9.chunk.css",
+    "static/js/2.a32269d7.chunk.js": "/my-vocabulary/static/js/2.a32269d7.chunk.js",
+    "static/js/2.a32269d7.chunk.js.map": "/my-vocabulary/static/js/2.a32269d7.chunk.js.map",
+    "static/js/3.e460c77f.chunk.js": "/my-vocabulary/static/js/3.e460c77f.chunk.js",
+    "static/js/3.e460c77f.chunk.js.map": "/my-vocabulary/static/js/3.e460c77f.chunk.js.map",
+    "index.html": "/my-vocabulary/index.html",
+    "static/css/2.21faa3a9.chunk.css.map": "/my-vocabulary/static/css/2.21faa3a9.chunk.css.map",
+    "static/css/main.540b87a0.chunk.css.map": "/my-vocabulary/static/css/main.540b87a0.chunk.css.map",
+    "static/js/2.a32269d7.chunk.js.LICENSE.txt": "/my-vocabulary/static/js/2.a32269d7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0960611c.js",
+    "static/css/2.21faa3a9.chunk.css",
+    "static/js/2.a32269d7.chunk.js",
+    "static/css/main.540b87a0.chunk.css",
+    "static/js/main.7457a192.chunk.js"
+  ]
+}
