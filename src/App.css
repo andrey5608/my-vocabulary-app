@@ -2,10 +2,7 @@
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
+
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -27,12 +24,9 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  width: 300px;
-  height: 200px;
   z-index: 15;
-  top: 50%;
-  left: 50%;
-  margin: -100px 0 0 -150px;
+  top: 25%;
+  left: 25%;
 }
 
 .App-link {

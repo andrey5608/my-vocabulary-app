@@ -1,10 +1,27 @@
 import React from "react";
-import { Button, Row, Col, AutoComplete, Input } from "antd";
+import { Button, Row, Col, AutoComplete, Input, Table } from "antd";
 import axios from "axios";
 import "antd/dist/antd.css";
 import "./App.css";
 
 const API_HOST = "https://my-vocabulary-deploy.azurewebsites.net";
+const COLUMN_WIDTH = 350;
+const FIELD_WIDTH = 350;
+
+const columns = [
+  {
+    title: 'Eng',
+    dataIndex: 'engWord',
+    key: 'engWord',
+    width: COLUMN_WIDTH
+  },
+  {
+    title: 'Rus',
+    dataIndex: 'rusWord',
+    key: 'rusWord',
+    width: COLUMN_WIDTH
+  },
+];
 
 class App extends React.Component {
   constructor(props) {
@@ -14,6 +31,7 @@ class App extends React.Component {
       engWord: "",
       items: [],
       sourceItems: [],
+      loading: false,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -24,16 +42,20 @@ class App extends React.Component {
   
 
   componentDidMount() {
+    this.setState({
+      loading: true
+    });
     fetch(`${API_HOST}/api/v2/vocabulary`)
       .then((res) => res.json())
       .then(
         (result) => {
           const uniqueTags = [];
           result.map((elem) => {
-            if (uniqueTags.indexOf(elem.engWord) === -1) {
-              uniqueTags.push(elem);
-            }
-          });
+              if (uniqueTags.indexOf(elem.engWord) === -1) {
+                uniqueTags.push(elem);
+              }
+              return elem;
+            });
           var options = uniqueTags;
           console.log(options);
           const opts = options.map((item) => {
@@ -43,6 +65,7 @@ class App extends React.Component {
             sourceItems: options,
             isLoaded: true,
             items: opts,
+            loading: false
           });
         },
         // Примечание: важно обрабатывать ошибки именно здесь, а не в блоке catch(),
@@ -51,6 +74,7 @@ class App extends React.Component {
           this.setState({
             isLoaded: true,
             error,
+            loading: false,
           });
         }
       );
@@ -74,7 +98,7 @@ class App extends React.Component {
     });
   }
 
-  saveToVocabulary(wordInEnglish, wordInRussian) {
+  saveToVocabulary() {
     axios
       .post(`${API_HOST}/api/v2/vocabulary`, {
         vocabularyElement: {
@@ -94,13 +118,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="App-content">
-          <Row gutter={[48, 48]}>
-            <Col span={12}>
+          <Row justify="space-around" align="middle">
+            <Col span={12} width={400} flex={1}>
               <AutoComplete
                 name="enWord"
                 style={{
-                  width: 300,
-                  left: -330,
+                  width: FIELD_WIDTH,
                 }}
                 options={this.state.items}
                 placeholder="try to type any word"
@@ -116,7 +139,7 @@ class App extends React.Component {
               <Input
                 name="ruWord"
                 placeholder="Russian translation"
-                style={{ width: 300 }}
+                style={{ width: FIELD_WIDTH }}
                 onChange={this.handleChange}
                 value={this.state.ruWord}
               />
@@ -132,6 +155,14 @@ class App extends React.Component {
               </Button>
             </Col>
           </Row>
+          <br/>
+          <div style={{backgroundColor: "whitesmoke"}}>
+        <Table 
+          {...this.state}
+          dataSource={this.state.sourceItems} columns={columns}
+          pagination={{ pageSize: 20 }} width={2.4*COLUMN_WIDTH}
+          bordered={true} />
+        </div>
         </div>
       </div>
     );
