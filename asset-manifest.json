@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/my-vocabulary-app/static/css/main.540b87a0.chunk.css",
-    "main.js": "/my-vocabulary-app/static/js/main.7457a192.chunk.js",
-    "main.js.map": "/my-vocabulary-app/static/js/main.7457a192.chunk.js.map",
-    "runtime-main.js": "/my-vocabulary-app/static/js/runtime-main.05c0abd6.js",
-    "runtime-main.js.map": "/my-vocabulary-app/static/js/runtime-main.05c0abd6.js.map",
+    "main.css": "/my-vocabulary-app/static/css/main.8e3ec81b.chunk.css",
+    "main.js": "/my-vocabulary-app/static/js/main.60109cc9.chunk.js",
+    "main.js.map": "/my-vocabulary-app/static/js/main.60109cc9.chunk.js.map",
+    "runtime-main.js": "/my-vocabulary-app/static/js/runtime-main.798e177a.js",
+    "runtime-main.js.map": "/my-vocabulary-app/static/js/runtime-main.798e177a.js.map",
     "static/css/2.21faa3a9.chunk.css": "/my-vocabulary-app/static/css/2.21faa3a9.chunk.css",
-    "static/js/2.a32269d7.chunk.js": "/my-vocabulary-app/static/js/2.a32269d7.chunk.js",
-    "static/js/2.a32269d7.chunk.js.map": "/my-vocabulary-app/static/js/2.a32269d7.chunk.js.map",
-    "static/js/3.e460c77f.chunk.js": "/my-vocabulary-app/static/js/3.e460c77f.chunk.js",
-    "static/js/3.e460c77f.chunk.js.map": "/my-vocabulary-app/static/js/3.e460c77f.chunk.js.map",
+    "static/js/2.0a896b97.chunk.js": "/my-vocabulary-app/static/js/2.0a896b97.chunk.js",
+    "static/js/2.0a896b97.chunk.js.map": "/my-vocabulary-app/static/js/2.0a896b97.chunk.js.map",
+    "static/js/3.6e57ab6b.chunk.js": "/my-vocabulary-app/static/js/3.6e57ab6b.chunk.js",
+    "static/js/3.6e57ab6b.chunk.js.map": "/my-vocabulary-app/static/js/3.6e57ab6b.chunk.js.map",
     "index.html": "/my-vocabulary-app/index.html",
     "static/css/2.21faa3a9.chunk.css.map": "/my-vocabulary-app/static/css/2.21faa3a9.chunk.css.map",
-    "static/css/main.540b87a0.chunk.css.map": "/my-vocabulary-app/static/css/main.540b87a0.chunk.css.map",
-    "static/js/2.a32269d7.chunk.js.LICENSE.txt": "/my-vocabulary-app/static/js/2.a32269d7.chunk.js.LICENSE.txt"
+    "static/css/main.8e3ec81b.chunk.css.map": "/my-vocabulary-app/static/css/main.8e3ec81b.chunk.css.map",
+    "static/js/2.0a896b97.chunk.js.LICENSE.txt": "/my-vocabulary-app/static/js/2.0a896b97.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.05c0abd6.js",
+    "static/js/runtime-main.798e177a.js",
     "static/css/2.21faa3a9.chunk.css",
-    "static/js/2.a32269d7.chunk.js",
-    "static/css/main.540b87a0.chunk.css",
-    "static/js/main.7457a192.chunk.js"
+    "static/js/2.0a896b97.chunk.js",
+    "static/css/main.8e3ec81b.chunk.css",
+    "static/js/main.60109cc9.chunk.js"
   ]
 }
