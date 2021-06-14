@@ -160,7 +160,7 @@ class App extends React.Component {
         <Table 
           {...this.state}
           dataSource={this.state.sourceItems} columns={columns}
-          pagination={{ pageSize: 20 }} width={2.4*COLUMN_WIDTH}
+          pagination={{ pageSize: 10 }} width={2.4*COLUMN_WIDTH}
           bordered={true} />
         </div>
         </div>
